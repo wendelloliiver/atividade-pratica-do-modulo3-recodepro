@@ -1,0 +1,31 @@
+/* brModeloLogico: */
+
+CREATE TABLE Cliente (
+    id int,
+    nome String,
+    email String,
+    telefone String
+);
+
+CREATE TABLE Fornecedor (
+    id int,
+    nome String,
+    endereco String,
+    telefone String
+);
+
+CREATE TABLE Destino (
+    id int,
+    pais String,
+    cidade String,
+    clima String
+);
+
+CREATE TABLE PacoteViagens (
+    id int,
+    destino String,
+    dataInicio Date,
+    dataFim Date,
+    preco double,
+    id_cliente int
+);
